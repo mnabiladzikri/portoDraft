@@ -37,52 +37,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- ================================================================= -->
-    <!-- FILE 1 DARI 3: style.css (BAGIAN CUSTOM STYLESHEET)               -->
-    <!-- Jika ingin dipisah: Salin isi di dalam tag <style> ke style.css   -->
-    <!-- ================================================================= -->
-    <style>
-        /* CSS Reset & Global Font Settings */
-        body {
-            background-color: #FFFFFF;
-            color: #0F172A;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        h1, h2, h3, h4, .font-heading {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        /* Custom Scrollbar Styling */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #F8FAFC;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #CBD5E1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #EA580C;
-        }
-
-        /* Video Card Hover Effects */
-        .video-card:hover .video-overlay {
-            opacity: 1;
-        }
-        .video-card:hover img {
-            transform: scale(1.04);
-        }
-
-        /* Smooth Project Card Transitions */
-        .project-card {
-            transition: all 0.3s ease-in-out;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
+
 <body class="bg-white text-brand-dark antialiased selection:bg-brand-orange selection:text-white">
 
     <!-- ================================================================= -->
@@ -100,7 +59,7 @@
                         <i class="fa-solid fa-video text-base"></i>
                     </div>
                     <div>
-                        <span class="text-lg font-extrabold tracking-wider text-brand-dark group-hover:text-brand-orange transition-colors">ADITYA<span class="text-brand-orange">.PRATAMA</span></span>
+                        <span class="text-lg font-extrabold tracking-wider text-brand-dark group-hover:text-brand-orange transition-colors">MUHAMMAD<span class="text-brand-orange">.NABIL</span></span>
                         <p class="text-[10px] text-brand-muted uppercase tracking-widest font-mono font-semibold">Videographer & Video Editor</p>
                     </div>
                 </a>
@@ -111,14 +70,16 @@
                     <a href="#portfolio" class="text-sm font-semibold text-brand-muted hover:text-brand-orange transition-colors">Hasil Karya</a>
                     <a href="#skills" class="text-sm font-semibold text-brand-muted hover:text-brand-orange transition-colors">Keahlian & Gear</a>
                     <a href="#experience" class="text-sm font-semibold text-brand-muted hover:text-brand-orange transition-colors">Pengalaman Organisasi</a>
-                    <a href="#contact" class="text-sm font-semibold text-brand-muted hover:text-brand-orange transition-colors">Kontak HR</a>
+                    <a href="#contact" class="text-sm font-semibold text-brand-muted hover:text-brand-orange transition-colors">Kontak</a>
                 </div>
 
                 <!-- CTA Button (Download Resume) -->
                 <div class="hidden md:flex items-center">
-                    <button onclick="downloadCV()" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-orange text-white hover:bg-brand-orangeHover hover:shadow-lg transition-all duration-300 flex items-center gap-2">
-                        <i class="fa-solid fa-file-arrow-down text-sm"></i> Unduh Resume / CV
-                    </button>
+                    <a href="CV_Download/MAIN CV.jpg" download="MAIN CV.jpg" target="_blank">
+                        <button onclick="downloadCV()" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-orange text-white hover:bg-brand-orangeHover hover:shadow-lg transition-all duration-300 flex items-center gap-2">
+                            <i class="fa-solid fa-file-arrow-down text-sm"></i> Unduh Resume / CV
+                        </button>
+                    </a>
                 </div>
 
                 <!-- Mobile Menu Toggle Button -->
@@ -318,7 +279,7 @@
                     <div class="p-4 rounded-xl bg-white border border-brand-border flex flex-wrap items-center justify-between gap-4">
                         <div>
                             <span class="text-[10px] font-mono text-brand-muted uppercase font-semibold">Pendidikan Terakhir</span>
-                            <p class="text-xs font-bold text-brand-dark">Lulusan SMA Negeri (Jurusan IPA / IPS)</p>
+                            <p class="text-xs font-bold text-brand-dark">Lulusan SMA Negeri (Jurusan IPA)</p>
                         </div>
                         <a href="#contact" class="text-xs font-bold text-brand-orange hover:underline flex items-center gap-1">
                             Tanya Detail Profil <i class="fa-solid fa-arrow-right text-[10px]"></i>
@@ -501,7 +462,7 @@
                             <span class="px-2.5 py-1 rounded-md bg-brand-orangeLight text-brand-orange font-bold text-[11px]">Sangat Mahir</span>
                         </li>
                         <li class="flex items-center justify-between p-3 rounded-xl bg-brand-sectionBg border border-brand-border">
-                            <span class="font-semibold text-brand-dark">Adobe Photoshop</span>
+                            <span class="font-semibold text-brand-dark">Adobe After Effects</span>
                             <span class="px-2.5 py-1 rounded-md bg-brand-orangeLight text-brand-orange font-bold text-[11px]">Dasar</span>
                         </li>
                     </ul>
@@ -517,11 +478,11 @@
                     <ul class="space-y-3 text-xs text-brand-muted">
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-brand-orange font-bold mt-0.5"></i>
-                            <span><strong class="text-brand-dark">Kamera Mirrorless & DSLR:</strong> Pengoperasian manual Sony Alpha & Canon EOS series.</span>
+                            <span><strong class="text-brand-dark">Kamera Mirrorless & DSLR:</strong> Pengoperasian manual ISO, Shutter Speed, Aparture, Dan White Balance</span>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-brand-orange font-bold mt-0.5"></i>
-                            <span><strong class="text-brand-dark">Gimbal & Stabilizer:</strong> Penggunaan DJI Ronin / FeiyuTech untuk pergerakan halus.</span>
+                            <span><strong class="text-brand-dark">Gimbal & Stabilizer:</strong> Penggunaan gimbal 3 axis atau lebih untuk pergerakan halus.</span>
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-brand-orange font-bold mt-0.5"></i>
@@ -529,7 +490,7 @@
                         </li>
                         <li class="flex items-start gap-2.5">
                             <i class="fa-solid fa-check text-brand-orange font-bold mt-0.5"></i>
-                            <span><strong class="text-brand-dark">Perekaman Audio:</strong> Wireless Clip-on Mic (Boye/Rode Wireless) & Mic Gun.</span>
+                            <span><strong class="text-brand-dark">Perekaman Audio:</strong> Wireless Clip-on Mic, Gun Mic, dan Boom Mic.</span>
                         </li>
                     </ul>
                 </div>
@@ -547,7 +508,7 @@
                         <span class="px-3 py-1.5 rounded-lg bg-brand-sectionBg border border-brand-border text-xs text-brand-dark font-semibold">Audio Noise Reduction</span>
                         <span class="px-3 py-1.5 rounded-lg bg-brand-sectionBg border border-brand-border text-xs text-brand-dark font-semibold">Transition FX</span>
                         <span class="px-3 py-1.5 rounded-lg bg-brand-sectionBg border border-brand-border text-xs text-brand-dark font-semibold">Auto & Manual Subtitles</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-brand-sectionBg border border-brand-border text-xs text-brand-dark font-semibold">Format Export (16:9 & 9:16)</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-brand-sectionBg border border-brand-border text-xs text-brand-dark font-semibold">Format Export (16:9 / 9:16 / 4:3 / 21:9)</span>
                     </div>
                 </div>
 
@@ -580,15 +541,15 @@
                     <div class="bg-brand-sectionBg p-6 rounded-2xl border border-brand-border space-y-3 shadow-sm">
                         <div class="flex flex-wrap items-center justify-between gap-2">
                             <div>
-                                <h3 class="text-lg font-bold text-brand-dark">Ketua Divisi Media, Dokumentasi & Publikasi</h3>
-                                <p class="text-xs sm:text-sm text-brand-orange font-bold">OSIS SMA Negeri • Organisasi Sekolah</p>
+                                <h3 class="text-lg font-bold text-brand-dark">Anggota Organisasi Intra Sekolah (OSIS)</h3>
+                                <p class="text-xs sm:text-sm text-brand-orange font-bold">OSIS SMA Negeri 5 • Seksi Bidang 9 (Teknologi Dan Informasi)</p>
                             </div>
                             <span class="px-3 py-1 rounded-full bg-white border border-brand-border text-xs font-mono text-brand-dark font-semibold">
-                                Periode 2023 – 2024
+                                Periode 2022 – 2023
                             </span>
                         </div>
                         <ul class="text-xs sm:text-sm text-brand-muted space-y-1.5 list-disc list-inside leading-relaxed">
-                            <li>Memimpin tim dokumentasi beranggotakan 6 orang untuk meliput seluruh kegiatan resmi sekolah (Pentas Seni, Upacara, MPLS, & Classmeeting).</li>
+                            <li>Bekerja dalam tim dokumentasi beranggotakan 5 orang untuk meliput seluruh kegiatan resmi sekolah (Pentas Seni, Upacara, MPLS, & Classmeeting).</li>
                             <li>Mengelola strategi konten Instagram Reels & TikTok sekolah hingga mencapai total jutaan impresi organik.</li>
                             <li>Mengatur jadwal pengambilan video, pembagian tugas editor, serta kontrol kualitas (<em>QC</em>) video sebelum rilis.</li>
                         </ul>
@@ -602,8 +563,8 @@
                     <div class="bg-brand-sectionBg p-6 rounded-2xl border border-brand-border space-y-3 shadow-sm">
                         <div class="flex flex-wrap items-center justify-between gap-2">
                             <div>
-                                <h3 class="text-lg font-bold text-brand-dark">Koordinator Videografi & Editor Aftermovie</h3>
-                                <p class="text-xs sm:text-sm text-brand-orange font-bold">Panitia Pentas Seni & Festival Budaya SMA</p>
+                                <h3 class="text-lg font-bold text-brand-dark">Anggota Panitia Divisi Publikasi Dan Dokumentasi</h3>
+                                <p class="text-xs sm:text-sm text-brand-orange font-bold">Panitia LaSastra 5</p>
                             </div>
                             <span class="px-3 py-1 rounded-full bg-white border border-brand-border text-xs font-mono text-brand-dark font-semibold">
                                 T.A. 2023
@@ -611,7 +572,7 @@
                         </div>
                         <ul class="text-xs sm:text-sm text-brand-muted space-y-1.5 list-disc list-inside leading-relaxed">
                             <li>Bertanggung jawab atas rekaman video seluruh penampilan musik panggung dan <em>booth</em> acara.</li>
-                            <li>Memproduksi video teaser promosi (1 minggu sebelum acara) dan <em>Official Aftermovie</em> berdurasi 3 menit.</li>
+                            <li>Memproduksi 6 video teaser promosi dan <em>Trailer Acara</em> berdurasi 3 menit.</li>
                             <li>Menyelaraskan rekaman audio langsung (<em>live audio feed</em>) dari mixer panggung dengan visual video.</li>
                         </ul>
                     </div>
@@ -624,15 +585,15 @@
                     <div class="bg-brand-sectionBg p-6 rounded-2xl border border-brand-border space-y-3 shadow-sm">
                         <div class="flex flex-wrap items-center justify-between gap-2">
                             <div>
-                                <h3 class="text-lg font-bold text-brand-dark">Anggota Aktif Extracurricular Sinematografi</h3>
-                                <p class="text-xs sm:text-sm text-brand-orange font-bold">Klub Film & Sinematografi SMA</p>
+                                <h3 class="text-lg font-bold text-brand-dark">Anggota Panitia Divisi Publikasi dan Dokumentasi Campus Expo SMA</h3>
+                                <p class="text-xs sm:text-sm text-brand-orange font-bold">Ketua Sub-Divisi Trailer & Aftermovie Campus Expo SMA</p>
                             </div>
                             <span class="px-3 py-1 rounded-full bg-white border border-brand-border text-xs font-mono text-brand-dark font-semibold">
-                                Periode 2021 – 2023
+                                Tahun 2026
                             </span>
                         </div>
                         <ul class="text-xs sm:text-sm text-brand-muted space-y-1.5 list-disc list-inside leading-relaxed">
-                            <li>Berpartisipasi dalam pembuatan 2 film pendek tingkat sekolah sebagai kameramen dan penyunting gambar.</li>
+                            <li>Berpartisipasi dalam pembuatan teaser dan aftermovie acara tersebut, berperan sebagai kameramen, Director, dan Video Editor</li>
                             <li>Mempelajari teknik <em>framing</em> sinematis, dasar-dasar <em>lighting</em>, dan penyuntingan di Premiere Pro.</li>
                         </ul>
                     </div>
@@ -670,7 +631,7 @@
                             </div>
                             <div>
                                 <p class="text-[10px] text-brand-muted font-mono uppercase font-semibold">Email Langsung</p>
-                                <a href="mailto:theresaclient@gmail.com" class="text-sm font-bold text-brand-dark hover:text-brand-orange transition-colors">theresaclient@gmail.com</a>
+                                <a href="mailto:mnabil.creative@gmail.com" class="text-sm font-bold text-brand-dark hover:text-brand-orange transition-colors">mnabil.creative@gmail.com</a>
                             </div>
                         </div>
 
@@ -680,7 +641,7 @@
                             </div>
                             <div>
                                 <p class="text-[10px] text-brand-muted font-mono uppercase font-semibold">WhatsApp / Telepon</p>
-                                <a href="https://wa.me/6281234567890" target="_blank" class="text-sm font-bold text-brand-dark hover:text-brand-orange transition-colors">+62 812-3456-7890</a>
+                                <a href="https://wa.me/6285117326133" target="_blank" class="text-sm font-bold text-brand-dark hover:text-brand-orange transition-colors">+62 812-3456-7890</a>
                             </div>
                         </div>
 
@@ -690,7 +651,7 @@
                             </div>
                             <div>
                                 <p class="text-[10px] text-brand-muted font-mono uppercase font-semibold">LinkedIn Profil</p>
-                                <a href="https://linkedin.com/in/aditya-videographer" target="_blank" class="text-sm font-bold text-brand-orange hover:underline">linkedin.com/in/aditya-videographer</a>
+                                <a href="www.linkedin.com/in/muhammadnabil-adzikri/" target="_blank" class="text-sm font-bold text-brand-orange hover:underline">linkedin.com/in/aditya-videographer</a>
                             </div>
                         </div>
                     </div>
@@ -799,165 +760,165 @@
     <!-- Jika ingin dipisah: Salin isi di dalam tag <script> ke script.js  -->
     <!-- ================================================================= -->
     <script>
-        // 1. Mobile Navigation Drawer Controller
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
+        // // 1. Mobile Navigation Drawer Controller
+        // const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        // const mobileMenu = document.getElementById('mobile-menu');
+        // const menuIcon = document.getElementById('menu-icon');
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            if (mobileMenu.classList.contains('hidden')) {
-                menuIcon.className = 'fa-solid fa-bars text-2xl';
-            } else {
-                menuIcon.className = 'fa-solid fa-xmark text-2xl';
-            }
-        });
+        // mobileMenuBtn.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('hidden');
+        //     if (mobileMenu.classList.contains('hidden')) {
+        //         menuIcon.className = 'fa-solid fa-bars text-2xl';
+        //     } else {
+        //         menuIcon.className = 'fa-solid fa-xmark text-2xl';
+        //     }
+        // });
 
-        // Close Mobile Menu when clicking menu link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.className = 'fa-solid fa-bars text-2xl';
-            });
-        });
+        // // Close Mobile Menu when clicking menu link
+        // document.querySelectorAll('#mobile-menu a').forEach(link => {
+        //     link.addEventListener('click', () => {
+        //         mobileMenu.classList.add('hidden');
+        //         menuIcon.className = 'fa-solid fa-bars text-2xl';
+        //     });
+        // });
 
-        // 2. Filter Portfolio Category Logic
-        function filterProjects(category) {
-            const cards = document.querySelectorAll('.project-card');
-            const buttons = document.querySelectorAll('.filter-btn');
+        // // 2. Filter Portfolio Category Logic
+        // function filterProjects(category) {
+        //     const cards = document.querySelectorAll('.project-card');
+        //     const buttons = document.querySelectorAll('.filter-btn');
 
-            buttons.forEach(btn => {
-                btn.classList.remove('bg-brand-orange', 'text-white', 'shadow-sm');
-                btn.classList.add('bg-brand-sectionBg', 'border', 'border-brand-border', 'text-brand-muted');
-            });
+        //     buttons.forEach(btn => {
+        //         btn.classList.remove('bg-brand-orange', 'text-white', 'shadow-sm');
+        //         btn.classList.add('bg-brand-sectionBg', 'border', 'border-brand-border', 'text-brand-muted');
+        //     });
 
-            event.target.classList.remove('bg-brand-sectionBg', 'border', 'border-brand-border', 'text-brand-muted');
-            event.target.classList.add('bg-brand-orange', 'text-white', 'shadow-sm');
+        //     event.target.classList.remove('bg-brand-sectionBg', 'border', 'border-brand-border', 'text-brand-muted');
+        //     event.target.classList.add('bg-brand-orange', 'text-white', 'shadow-sm');
 
-            cards.forEach(card => {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = 'block';
-                    setTimeout(() => {
-                        card.style.opacity = '1';
-                        card.style.transform = 'scale(1)';
-                    }, 50);
-                } else {
-                    card.style.opacity = '0';
-                    card.style.transform = 'scale(0.95)';
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 250);
-                }
-            });
-        }
+        //     cards.forEach(card => {
+        //         if (category === 'all' || card.getAttribute('data-category') === category) {
+        //             card.style.display = 'block';
+        //             setTimeout(() => {
+        //                 card.style.opacity = '1';
+        //                 card.style.transform = 'scale(1)';
+        //             }, 50);
+        //         } else {
+        //             card.style.opacity = '0';
+        //             card.style.transform = 'scale(0.95)';
+        //             setTimeout(() => {
+        //                 card.style.display = 'none';
+        //             }, 250);
+        //         }
+        //     });
+        // }
 
-        // 3. Open Video Modal Viewer
-        function openVideoModal(videoUrl, title, description) {
-            const modal = document.getElementById('video-modal');
-            const iframe = document.getElementById('modal-iframe');
-            const titleEl = document.getElementById('modal-title');
-            const descEl = document.getElementById('modal-description');
+        // // 3. Open Video Modal Viewer
+        // function openVideoModal(videoUrl, title, description) {
+        //     const modal = document.getElementById('video-modal');
+        //     const iframe = document.getElementById('modal-iframe');
+        //     const titleEl = document.getElementById('modal-title');
+        //     const descEl = document.getElementById('modal-description');
 
-            iframe.src = videoUrl + "?autoplay=1";
-            titleEl.innerText = title;
-            descEl.innerText = description;
+        //     iframe.src = videoUrl + "?autoplay=1";
+        //     titleEl.innerText = title;
+        //     descEl.innerText = description;
 
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-        }
+        //     modal.classList.remove('hidden');
+        //     modal.classList.add('flex');
+        //     document.body.style.overflow = 'hidden';
+        // }
 
-        // Close Video Modal Viewer
-        function closeVideoModal() {
-            const modal = document.getElementById('video-modal');
-            const iframe = document.getElementById('modal-iframe');
+        // // Close Video Modal Viewer
+        // function closeVideoModal() {
+        //     const modal = document.getElementById('video-modal');
+        //     const iframe = document.getElementById('modal-iframe');
 
-            iframe.src = "";
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-            document.body.style.overflow = 'auto';
-        }
+        //     iframe.src = "";
+        //     modal.classList.add('hidden');
+        //     modal.classList.remove('flex');
+        //     document.body.style.overflow = 'auto';
+        // }
 
-        // Close Modal when clicking dark background backdrop
-        document.getElementById('video-modal').addEventListener('click', (e) => {
-            if (e.target.id === 'video-modal') {
-                closeVideoModal();
-            }
-        });
+        // // Close Modal when clicking dark background backdrop
+        // document.getElementById('video-modal').addEventListener('click', (e) => {
+        //     if (e.target.id === 'video-modal') {
+        //         closeVideoModal();
+        //     }
+        // });
 
-        // 4. Download CV Action Simulation
-        function downloadCV() {
-            showToast('Mengunduh CV...', 'Berkas CV_Aditya_Pratama_Videographer.pdf berhasil diproses!');
-        }
+        // // 4. Download CV Action Simulation
+        // function downloadCV() {
+        //     showToast('Mengunduh CV...', 'Berkas CV_Aditya_Pratama_Videographer.pdf berhasil diproses!');
+        // }
 
-        // 5. HR Form Submission Handler (Automatic Direct Email Sending)
-        async function handleFormSubmit(event) {
-            event.preventDefault();
+        // // 5. HR Form Submission Handler (Automatic Direct Email Sending)
+        // async function handleFormSubmit(event) {
+        //     event.preventDefault();
 
-            const submitBtn = document.getElementById('submit-btn');
-            const originalBtnText = submitBtn.innerHTML;
+        //     const submitBtn = document.getElementById('submit-btn');
+        //     const originalBtnText = submitBtn.innerHTML;
 
-            // Ambil data dari form
-            const name = document.getElementById('input-name').value;
-            const company = document.getElementById('input-company').value;
-            const email = document.getElementById('input-email').value;
-            const position = document.getElementById('input-position').value;
-            const message = document.getElementById('input-message').value;
+        //     // Ambil data dari form
+        //     const name = document.getElementById('input-name').value;
+        //     const company = document.getElementById('input-company').value;
+        //     const email = document.getElementById('input-email').value;
+        //     const position = document.getElementById('input-position').value;
+        //     const message = document.getElementById('input-message').value;
 
-            // Alamat email Anda yang menerima seluruh pesan dari website
-            const myTargetEmail = "mnabil.aimed@gmail.com";
+        //     // Alamat email Anda yang menerima seluruh pesan dari website
+        //     const myTargetEmail = "mnabil.aimed@gmail.com";
 
-            // Tampilkan status loading pada tombol
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin text-sm"></i> Mengirim Pesan...`;
+        //     // Tampilkan status loading pada tombol
+        //     submitBtn.disabled = true;
+        //     submitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin text-sm"></i> Mengirim Pesan...`;
 
-            try {
-                const response = await fetch(`https://formsubmit.co/ajax/${myTargetEmail}`, {
-                    method: "POST",
-                    headers: { 
-                        "Content-Type": "application/json",
-                        "Accept": "application/json"
-                    },
-                    body: JSON.stringify({
-                        "Nama Pengirim": name,
-                        "Perusahaan / Brand": company,
-                        "Email Pengirim (HR/Client)": email,
-                        "Posisi Ditawarkan": position,
-                        "Pesan / Detail Undangan": message,
-                        "_replyto": email, // Agar saat Anda klik Balas/Reply di Gmail langsung ke email client
-                        "_subject": `[Portofolio HR] Undangan / Pesan Baru dari ${name} (${company})`,
-                        "_template": "table"
-                    })
-                });
+        //     try {
+        //         const response = await fetch(`https://formsubmit.co/ajax/${myTargetEmail}`, {
+        //             method: "POST",
+        //             headers: { 
+        //                 "Content-Type": "application/json",
+        //                 "Accept": "application/json"
+        //             },
+        //             body: JSON.stringify({
+        //                 "Nama Pengirim": name,
+        //                 "Perusahaan / Brand": company,
+        //                 "Email Pengirim (HR/Client)": email,
+        //                 "Posisi Ditawarkan": position,
+        //                 "Pesan / Detail Undangan": message,
+        //                 "_replyto": email, // Agar saat Anda klik Balas/Reply di Gmail langsung ke email client
+        //                 "_subject": `[Portofolio HR] Undangan / Pesan Baru dari ${name} (${company})`,
+        //                 "_template": "table"
+        //             })
+        //         });
 
-                if (response.ok) {
-                    showToast('Pesan Terkirim!', 'Terima kasih, pesan Anda telah otomatis dikirim ke email Aditya.');
-                    event.target.reset();
-                } else {
-                    showToast('Gagal Mengirim', 'Terjadi kesalahan sistem. Silakan coba lagi nanti.');
-                }
-            } catch (error) {
-                showToast('Gagal Mengirim', 'Periksa koneksi internet Anda dan coba lagi.');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnText;
-            }
-        }
+        //         if (response.ok) {
+        //             showToast('Pesan Terkirim!', 'Terima kasih, pesan Anda telah otomatis dikirim ke email Aditya.');
+        //             event.target.reset();
+        //         } else {
+        //             showToast('Gagal Mengirim', 'Terjadi kesalahan sistem. Silakan coba lagi nanti.');
+        //         }
+        //     } catch (error) {
+        //         showToast('Gagal Mengirim', 'Periksa koneksi internet Anda dan coba lagi.');
+        //     } finally {
+        //         submitBtn.disabled = false;
+        //         submitBtn.innerHTML = originalBtnText;
+        //     }
+        // }
 
-        // 6. Toast Notification Popup System
-        function showToast(title, message) {
-            const toast = document.getElementById('toast');
-            document.getElementById('toast-title').innerText = title;
-            document.getElementById('toast-message').innerText = message;
+        // // 6. Toast Notification Popup System
+        // function showToast(title, message) {
+        //     const toast = document.getElementById('toast');
+        //     document.getElementById('toast-title').innerText = title;
+        //     document.getElementById('toast-message').innerText = message;
 
-            toast.classList.remove('hidden');
-            toast.classList.add('flex');
+        //     toast.classList.remove('hidden');
+        //     toast.classList.add('flex');
 
-            setTimeout(() => {
-                toast.classList.add('hidden');
-                toast.classList.remove('flex');
-            }, 4500);
-        }
+        //     setTimeout(() => {
+        //         toast.classList.add('hidden');
+        //         toast.classList.remove('flex');
+        //     }, 4500);
+        // }
     </script>
 </body>
 </html>
