@@ -641,7 +641,7 @@
                             </div>
                             <div>
                                 <p class="text-[10px] text-brand-muted font-mono uppercase font-semibold">WhatsApp / Telepon</p>
-                                <a href="https://wa.me/6285117326133" target="_blank" class="text-sm font-bold text-brand-dark hover:text-brand-orange transition-colors">+62 851-1732-6133</a>
+                                <a href="https://wa.me/6285117326133" target="_blank" class="text-sm font-bold text-brand-dark hover:text-brand-orange transition-colors">+62 812-3456-7890</a>
                             </div>
                         </div>
 
@@ -761,26 +761,26 @@
     <!-- ================================================================= -->
     <script>
         // // 1. Mobile Navigation Drawer Controller
-        // const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        // const mobileMenu = document.getElementById('mobile-menu');
-        // const menuIcon = document.getElementById('menu-icon');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
 
-        // mobileMenuBtn.addEventListener('click', () => {
-        //     mobileMenu.classList.toggle('hidden');
-        //     if (mobileMenu.classList.contains('hidden')) {
-        //         menuIcon.className = 'fa-solid fa-bars text-2xl';
-        //     } else {
-        //         menuIcon.className = 'fa-solid fa-xmark text-2xl';
-        //     }
-        // });
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark text-2xl';
+            }
+        });
 
-        // // Close Mobile Menu when clicking menu link
-        // document.querySelectorAll('#mobile-menu a').forEach(link => {
-        //     link.addEventListener('click', () => {
-        //         mobileMenu.classList.add('hidden');
-        //         menuIcon.className = 'fa-solid fa-bars text-2xl';
-        //     });
-        // });
+        // Close Mobile Menu when clicking menu link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-2xl';
+            });
+        });
 
         // // 2. Filter Portfolio Category Logic
         // function filterProjects(category) {

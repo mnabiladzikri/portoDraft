@@ -1,24 +1,24 @@
 // 1. Mobile Navigation Drawer Controller
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
+        // const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        // const mobileMenu = document.getElementById('mobile-menu');
+        // const menuIcon = document.getElementById('menu-icon');
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            if (mobileMenu.classList.contains('hidden')) {
-                menuIcon.className = 'fa-solid fa-bars text-2xl';
-            } else {
-                menuIcon.className = 'fa-solid fa-xmark text-2xl';
-            }
-        });
+        // mobileMenuBtn.addEventListener('click', () => {
+        //     mobileMenu.classList.toggle('hidden');
+        //     if (mobileMenu.classList.contains('hidden')) {
+        //         menuIcon.className = 'fa-solid fa-bars text-2xl';
+        //     } else {
+        //         menuIcon.className = 'fa-solid fa-xmark text-2xl';
+        //     }
+        // });
 
-        // Close Mobile Menu when clicking menu link
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuIcon.className = 'fa-solid fa-bars text-2xl';
-            });
-        });
+        // // Close Mobile Menu when clicking menu link
+        // document.querySelectorAll('#mobile-menu a').forEach(link => {
+        //     link.addEventListener('click', () => {
+        //         mobileMenu.classList.add('hidden');
+        //         menuIcon.className = 'fa-solid fa-bars text-2xl';
+        //     });
+        // });
 
         // 2. Filter Portfolio Category Logic
         function filterProjects(category) {
